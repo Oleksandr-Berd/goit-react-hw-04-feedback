@@ -1,0 +1,29 @@
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.option__btn {
+  margin-right: 15px;
+  font-size: 25px;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.option__btn:last-child {
+  margin-right: 0;
+}
+
+.option__btn[data-content='good'] {
+  background-color: greenyellow;
+}
+
+.option__btn[data-content='neutral'] {
+  background-color: yellow;
+}
+
+.option__btn[data-content='bad'] {
+  background-color: lightcoral;
+}
