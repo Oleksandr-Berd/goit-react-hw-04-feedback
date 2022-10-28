@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Oleksandr-Berd/goit-react-hw-04-feedback.git/static/css/main.192c1730.css",
-    "main.js": "/Oleksandr-Berd/goit-react-hw-04-feedback.git/static/js/main.c0f8b4c2.js",
+    "main.js": "/Oleksandr-Berd/goit-react-hw-04-feedback.git/static/js/main.c114f256.js",
     "index.html": "/Oleksandr-Berd/goit-react-hw-04-feedback.git/index.html",
     "main.192c1730.css.map": "/Oleksandr-Berd/goit-react-hw-04-feedback.git/static/css/main.192c1730.css.map",
-    "main.c0f8b4c2.js.map": "/Oleksandr-Berd/goit-react-hw-04-feedback.git/static/js/main.c0f8b4c2.js.map"
+    "main.c114f256.js.map": "/Oleksandr-Berd/goit-react-hw-04-feedback.git/static/js/main.c114f256.js.map"
   },
   "entrypoints": [
     "static/css/main.192c1730.css",
-    "static/js/main.c0f8b4c2.js"
+    "static/js/main.c114f256.js"
   ]
 }
