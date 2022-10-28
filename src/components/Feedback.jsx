@@ -13,9 +13,9 @@ export default function FeedbackHooks() {
   const handleIncrement = evt => {
     const { textContent } = evt.target;
 
-    textContent === 'good' && setGood(prevState => prevState + 1);
-    textContent === 'neutral' && setNeutral(prevState => prevState + 1);
-    textContent === 'bad' && setBad(prevState => prevState + 1);
+    textContent === 'good' && setGood(state => state + 1);
+    textContent === 'neutral' && setNeutral(state => state + 1);
+    textContent === 'bad' && setBad(state => state + 1);
   };
 
   return (

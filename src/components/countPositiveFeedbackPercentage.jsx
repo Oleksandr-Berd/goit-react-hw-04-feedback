@@ -1,20 +1,21 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import { useEffect } from 'react';
+import { useState } from 'react';
 import css from './CountPositive.module.css';
 
-const CountPositiveFeedbackPercentage = ({ good, neutral, bad }) => (
-  <li className={css.statistic__item}>
-    Positive feedback:{' '}
-    {good === 0 && neutral === 0 && bad === 0
-      ? 0
-      : ((good / (good + bad + neutral)) * 100).toFixed(2) + '%'}
-  </li>
-);
+export default function CountPositiveFeedbackPercentage({
+  good,
+  neutral,
+  bad,
+}) {
+  const [totalPositive, setTotalPositive] = useState(0);
 
-CountPositiveFeedbackPercentage.prototype = {
-  good: PropTypes.number.isRequired,
-  neutral: PropTypes.number.isRequired,
-  bad: PropTypes.number.isRequired,
-};
+  useEffect(() => {
+    setTotalPositive(
+      () => ((good / (good + bad + neutral)) * 100).toFixed(2) + '%'
+    );
+  }, [good, neutral, bad, totalPositive]);
 
-export default CountPositiveFeedbackPercentage;
+  return (
+    <li className={css.statistic__item}>Positive feedback: {totalPositive}</li>
+  );
+}
